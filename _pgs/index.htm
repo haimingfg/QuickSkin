@@ -1,0 +1,58 @@
+<body this tag tells all>
+<table width="99%" border="0" cellspacing="0" cellpadding="0" align="center">
+<tr>
+  <td class="common" valign="top" style="padding-top:5px;">
+
+    <img border="0" src="{url_img}/placeholder.jpg" width="217" height="281" align="left" style="margin-right:10px;margin-bottom:10px;">
+
+    Designing with QuickSkin is easy and simple. It is the ultimate separate of Content from
+    Layout. Skins are simple to design using basic tools like Microsoft FrontPage (or ExpressWeb)
+    or Macromedia Dreamweaver.<br />
+    <br />
+    QuickSkin is a Template Engine that was designed to support web based applications of any size.
+    It is suited to small basic websites all the way up to large scale applications like Content
+    Management Systems. It has many advantages over other templating systems including speed,
+    small footprint,  ease of use, and power.</p>
+    <p class="blue_link"><strong>What's so special about QuickSkin?</strong></p>
+    <p>Common template engines work like the following: Your PHP script  specifies an HTML template
+    and assigns some dynamic content to display.  The template parser replaces all placeholders
+    within the template with  the assigned content and displays it to the user. This means a lot of
+    string processing and regular expression work each time you want to  display some content.</p>
+    <p>QuickSkin works like a 'template compiler' that converts templates  into executable PHP code
+    and stores it for later reuse. The first time  a new template is processed, all placeholders in
+    the template are  replaced by small PHP code elements that print the assigned content. The HTML
+    template fragment <strong>&lt;H3&gt;&lt;/H3&gt;</strong>, for example, is converted into something
+    like <strong>&lt;H3&gt;&lt;?php echo $TITLE; ?&gt;&lt;/H3&gt;</strong>.  If you have assigned your
+    content to the right variables, there is no  need for any template parsing anymore. The only thing
+    that has to be  done is to include and execute the compiled template. This usually  increases the
+    execution time of the template engine dramatically.<br />
+    <br />
+    <strong class="blue_link">QuickSkin supports:</strong><br />
+     &ndash; Simple Scalar Substitution (Strings, etc.)<br />
+     &ndash; Block Iterations (nested Arrays / BEGIN..END)<br />
+     &ndash; Basic Control Structures (IF..ELSEIF..ELSE)<br />
+     &ndash; Custom Extension (Output filters, uppercase, sprintf, etc.)<br />
+     &ndash; Template Compilation (HTML templates are converted to executable PHP Code)<br />
+     &ndash; Output Caching (Accelerates your applications by reusing page output)<br />
+     &ndash; <strong><em>January 2009</em></strong>:  QuickSkin is now PHP5 compliant and tested up
+     to and including PHP  5.2.4. It is tested with E_STRICT.</p>
+     How to use scalar substitution. The examples below use the mail encode scalar:<br />
+     1 - {mailtoencode:"yourname@yourdomain.com"}<br />
+     2 - {mailtoencode:"yourname@yourdomain.com","Your Name"}<br />
+     3 - {mailtoencode:"yourname@yourdomain.com","Your Name",true,'white'}<br />
+     4 - {mailtoencode:"yourname@yourdomain.com","Your Name",true,'white','font-size:18px;'}<br />
+     5 - {mailtoencode:"yourname@yourdomain.com","Your Name",true,'','font-size:18px;'}<br />
+     6 - {mailtoencode:"yourname@yourdomain.com","Your Name",true,'white','font-size:18px;'}<br />
+     and a test:
+     {codesnippetstart:}
+&lt;?php
+/* display some php code in here */
+This can display any code snippet, special text, instructions, etc.
+?&gt;
+     {codesnippetend:}
+   </td>
+  </tr>
+  <tr><td height="4"></td></tr>
+</table>
+</body>
+and here

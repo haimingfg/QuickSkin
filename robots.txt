@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /_lib/
+Disallow: /_pgs/
+Disallow: /_skins/
+Disallow: /_skins_tmp/
+Disallow: /cgi-bin/
